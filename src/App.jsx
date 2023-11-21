@@ -3,7 +3,7 @@ import Avatar from './Avatar'
 function App() {
 	return (
 		<>
-			<Avatar src="./images/bob.jpg" alt="Bob Ziroll" />
+			<Avatar src="./assets/bob.jpg" alt="Bob Ziroll" />
 			<br />
 			<Avatar>BZ</Avatar>
 			<br />

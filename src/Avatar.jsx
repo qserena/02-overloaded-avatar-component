@@ -1,4 +1,6 @@
 import { IoPersonSharp } from 'react-icons/io5'
+import classnames from 'classnames'
+import bob from './assets/bob.jpg'
 
 /**
  * Challenge: Create a flexible Avatar component!
@@ -24,6 +26,38 @@ import { IoPersonSharp } from 'react-icons/io5'
  * color classes to add to the wrapper div.
  */
 
-export default function Avatar() {
-	return <h2>Avatar component here!</h2>
+export default function Avatar({ src, alt, children, className, ...rest }) {
+	let letterClass = ''
+	let anonymousClass = ''
+	let image = ''
+	let icon = ''
+	const backgroundColors = ['navy', 'pink', 'red', 'blue', 'green']
+
+	if (src) {
+		// Image
+		image = alt ? <img src={bob} alt={alt} /> : <img src={src} />
+	} else if (children) {
+		// Initials
+		letterClass = 'avatar-letters'
+	} else {
+		// Anonymous
+		icon = <IoPersonSharp />
+		const randomIndex = Math.floor(backgroundColors.length * Math.random())
+		anonymousClass = 'avatar-icon ' + backgroundColors[randomIndex]
+	}
+
+	const allClasses = classnames(
+		'avatar',
+		className,
+		letterClass,
+		anonymousClass
+	)
+
+	return (
+		<div className={allClasses} {...rest}>
+			{image}
+			{children}
+			{icon}
+		</div>
+	)
 }
