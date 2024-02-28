@@ -1,6 +1,7 @@
 import { IoPersonSharp } from 'react-icons/io5'
 import classnames from 'classnames'
 import bob from './assets/bob.jpg'
+import tom from './assets/Tom.jpg'
 
 /**
  * Challenge: Create a flexible Avatar component!
@@ -34,8 +35,8 @@ export default function Avatar({ src, alt, children, className, ...rest }) {
 	const backgroundColors = ['navy', 'pink', 'red', 'blue', 'green']
 
 	if (src) {
-		// Image
-		image = alt ? <img src={bob} alt={alt} /> : <img src={src} />
+		// Photo
+		image = alt ? <img src={src} alt={alt} /> : <img src={src} />
 	} else if (children) {
 		// Initials
 		letterClass = 'avatar-letters'
