@@ -3,7 +3,7 @@
 ## Description
 This is an avatar made as a reusable React Component which can appear in the following three different versions, depending on which props are provided to it:
 
-- With an image
+- With an image (photo)
 - With initials
 - Anonymous, with a user icon from IoPersonSharp in the `react-icons` library.
 
