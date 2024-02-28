@@ -14,6 +14,14 @@ body {
 	background-color: #2f2f2f;
 }
 
+.main-board {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 10%;
+	margin-top: 60px;
+}
+
 .avatar {
 	height: 150px;
 	width: 150px;

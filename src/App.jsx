@@ -4,8 +4,8 @@ import tom from './assets/Tom.jpg'
 
 function App() {
 	return (
-		<>
-			<div>
+		<div className="main-board">
+			<div className="user">
 				<Avatar src={bob} alt="Bob Ziroll" />
 				<br />
 				<Avatar>BZ</Avatar>
@@ -13,14 +13,14 @@ function App() {
 				<Avatar />
 			</div>
 
-			<div>
+			<div className="user">
 				<Avatar src={tom} alt="Tom Serenander" />
 				<br />
 				<Avatar>TS</Avatar>
 				<br />
 				<Avatar />
 			</div>
-		</>
+		</div>
 	)
 }
 
