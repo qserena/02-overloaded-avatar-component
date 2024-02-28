@@ -1,9 +1,14 @@
 # Avatar Component
 
 ## Description
-An app where you can write your own notes and format the texts with markup tags. If you click the Preview button at the top you will see the markup appearance!
+This is an avatar made as a reusable React Component which can appear in the following three different versions, depending on which props are provided to it:
 
-In this version the notes are stored in a database which means they are visible for everyone. I have another version which stores to localstorage.
+- With an image
+- With initials
+- Anonymous, with a user icon from IoPersonSharp in the `react-icons` library.
+
+In this version of the component the "initials version" is hard-coded to red color, and color of the "Anonymous version" is randomized.
+  
 <br/>
 <br/>
 <img src="avatars.png" alt="Screenshot." width="300px"/>
