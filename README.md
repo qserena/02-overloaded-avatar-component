@@ -7,9 +7,8 @@ This is an avatar made as a reusable React Component which can appear in the fol
 - With initials
 - Anonymous, with a user icon from IoPersonSharp in the `react-icons` library.
 
-In this version of the component the "initials version" is hard-coded to red color, and color of the "Anonymous version" is randomized.
+In this version of the component the "initials version" is hard-coded to red color, and the color of the "Anonymous version" is randomized.
   
-<br/>
 <br/>
 <img src="avatars.png" alt="Screenshot." width="300px"/>
 
