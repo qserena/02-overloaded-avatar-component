@@ -14,5 +14,8 @@ In this version the notes are stored in a database which means they are visible 
 - JavaScript
 - React
 
-## Patch that had to be done
-Because of the dependency from react-mde to react 17 I had to do some stuff from [this stackoverflow page](https://stackoverflow.com/questions/73077186/react-mde-cant-install-on-react-18-2-0)
+## Live link
+The site is deployed here:
+[https://toms-avatar.netlify.app](https://toms-avatar.netlify.app)
+
+Please feel free to visit the site!
