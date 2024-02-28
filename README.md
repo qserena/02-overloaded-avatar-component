@@ -1,8 +1,18 @@
-# React + Vite
+# Avatar Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+An app where you can write your own notes and format the texts with markup tags. If you click the Preview button at the top you will see the markup appearance!
 
-Currently, two official plugins are available:
+In this version the notes are stored in a database which means they are visible for everyone. I have another version which stores to localstorage.
+<br/>
+<br/>
+<img src="avatars.png" alt="Screenshot." width="300px"/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- HTML
+- CSS
+- JavaScript
+- React
+
+## Patch that had to be done
+Because of the dependency from react-mde to react 17 I had to do some stuff from [this stackoverflow page](https://stackoverflow.com/questions/73077186/react-mde-cant-install-on-react-18-2-0)
