@@ -22,9 +22,12 @@ function App() {
 		<>
 			<div className="main-board">
 				<div className="user">
-					<Avatar src={bob} alt="Bob Ziroll" />
+					<Avatar
+						src="https://randomuser.me/api/portraits/men/9.jpg"
+						alt="Bob Persson"
+					/>
 
-					<Avatar color={backgroundColors[randomIndex1]}>BZ</Avatar>
+					<Avatar color={backgroundColors[randomIndex1]}>BP</Avatar>
 
 					<Avatar color={backgroundColors[randomIndex1]} />
 				</div>
