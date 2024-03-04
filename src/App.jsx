@@ -19,23 +19,28 @@ function App() {
 		randomIndex2 = Math.floor(backgroundColors.length * Math.random())
 	}
 	return (
-		<div className="main-board">
-			<div className="user">
-				<Avatar src={bob} alt="Bob Ziroll" />
-				<br />
-				<Avatar color={backgroundColors[randomIndex1]}>BZ</Avatar>
-				<br />
-				<Avatar color={backgroundColors[randomIndex1]} />
-			</div>
+		<>
+			<div className="main-board">
+				<div className="user">
+					<Avatar src={bob} alt="Bob Ziroll" />
 
-			<div className="user">
-				<Avatar src={tom} alt="Tom Serenander" />
-				<br />
-				<Avatar color={backgroundColors[randomIndex2]}>TS</Avatar>
-				<br />
-				<Avatar color={backgroundColors[randomIndex2]} />
+					<Avatar color={backgroundColors[randomIndex1]}>BZ</Avatar>
+
+					<Avatar color={backgroundColors[randomIndex1]} />
+				</div>
+
+				<div className="user">
+					<Avatar src={tom} alt="Tom Serenander" />
+
+					<Avatar color={backgroundColors[randomIndex2]}>TS</Avatar>
+
+					<Avatar color={backgroundColors[randomIndex2]} />
+				</div>
 			</div>
-		</div>
+			<div class="home-hero__cta">
+				<btn className="btn btn--bg">Test new colors</btn>
+			</div>
+		</>
 	)
 }
 

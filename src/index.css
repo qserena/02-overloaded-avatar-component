@@ -12,6 +12,10 @@
 
 body {
 	background-color: #2f2f2f;
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
 }
 
 .main-board {
@@ -20,6 +24,12 @@ body {
 	justify-content: center;
 	gap: 10%;
 	margin-top: 60px;
+}
+
+.user {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .avatar {
@@ -56,6 +66,35 @@ body {
 	width: 100%;
 	transform: translateY(20px);
 	color: whitesmoke;
+}
+
+.home-hero__cta {
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.btn {
+	background: lightgray;
+	color: #333;
+	margin-top: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: inline-block;
+	font-weight: 700;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s;
+}
+
+.btn:hover {
+	background: #e6e6e6;
+	transform: translateY(-3px);
+	cursor: pointer;
+}
+
+.btn--bg {
+	padding: 0.6rem 3rem;
+	font-size: 1rem;
 }
 
 /*
