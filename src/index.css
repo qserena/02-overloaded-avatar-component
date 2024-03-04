@@ -67,11 +67,15 @@ background colors for the extra credit
 }
 
 .pink {
-	background-color: #da6aec;
+	background-color: #f562d5;
 }
 
 .red {
 	background-color: #f43f5e;
+}
+
+.purple {
+	background-color: #ba03fc;
 }
 
 .blue {
@@ -80,4 +84,12 @@ background colors for the extra credit
 
 .green {
 	background-color: #22cd90;
+}
+
+.yellow {
+	background-color: #fcba03;
+}
+
+.orange {
+	background-color: #fc8403;
 }

@@ -27,12 +27,30 @@ import tom from './assets/Tom.jpg'
  * color classes to add to the wrapper div.
  */
 
-export default function Avatar({ src, alt, children, className, ...rest }) {
+export default function Avatar({
+	src,
+	alt,
+	color,
+	children,
+	className,
+	...rest
+}) {
 	let letterClass = ''
+	let colorClass = ''
 	let anonymousClass = ''
 	let image = ''
 	let icon = ''
-	const backgroundColors = ['navy', 'pink', 'red', 'blue', 'green']
+	const backgroundColors = [
+		'navy',
+		'pink',
+		'red',
+		'purple',
+		'blue',
+		'green',
+		'yellow',
+		'orange',
+	]
+	const randomIndex = Math.floor(backgroundColors.length * Math.random())
 
 	if (src) {
 		// Photo
@@ -40,17 +58,19 @@ export default function Avatar({ src, alt, children, className, ...rest }) {
 	} else if (children) {
 		// Initials
 		letterClass = 'avatar-letters'
+		colorClass = color || backgroundColors[randomIndex]
 	} else {
 		// Anonymous
 		icon = <IoPersonSharp />
-		const randomIndex = Math.floor(backgroundColors.length * Math.random())
-		anonymousClass = 'avatar-icon ' + backgroundColors[randomIndex]
+		colorClass = color || backgroundColors[randomIndex]
+		anonymousClass = 'avatar-icon'
 	}
 
 	const allClasses = classnames(
 		'avatar',
 		className,
 		letterClass,
+		colorClass,
 		anonymousClass
 	)
 
