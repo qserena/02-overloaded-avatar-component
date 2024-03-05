@@ -13,38 +13,13 @@ function App() {
 		'yellow',
 		'orange',
 	]
-	console.log('hej')
-	// const button = document.getElementById('new-color-btn')
-	// console.log(button)
 
-	//button.addEventListener('click', generateColors)
-	// button.addEventListener('click', () => {
-	// 	console.log('Statarlänga!')
-	// 	const randomIndex1 = Math.floor(backgroundColors.length * Math.random())
-	// 	let randomIndex2 = randomIndex1
-	// 	let randomIndex3 = randomIndex1
-	// 	while (randomIndex2 === randomIndex1) {
-	// 		randomIndex2 = Math.floor(backgroundColors.length * Math.random())
-	// 	}
-	// 	while (randomIndex3 === randomIndex1 || randomIndex3 === randomIndex2) {
-	// 		randomIndex3 = Math.floor(backgroundColors.length * Math.random())
-	// 	}
+	const [color1, setColor1] = useState('blue')
+	const [color2, setColor2] = useState('red')
+	const [color3, setColor3] = useState('purple')
 
-	// 	color1 = backgroundColors[randomIndex1]
-	// 	color2 = backgroundColors[randomIndex2]
-	// 	color3 = backgroundColors[randomIndex3]
-	// 	console.log('heimat!')
-	// })
-
-	const [color1, setColor1] = useState('orange')
-	//let color1 = 'orange'
-	//let color2 = 'blue'
-	const [color2, setColor2] = useState('blue')
-	//let color3 = 'yellow'
-	const [color3, setColor3] = useState('yellow')
-
+	// Generates three unique colors
 	function generateColors() {
-		console.log('hoimat!')
 		const randomIndex1 = Math.floor(backgroundColors.length * Math.random())
 		let randomIndex2 = randomIndex1
 		let randomIndex3 = randomIndex1
