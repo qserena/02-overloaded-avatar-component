@@ -54,6 +54,8 @@ export default function Avatar({
 
 	// const [color, setColor] = useState('orange')
 
+	console.log('color: ' + color)
+
 	const randomIndex = Math.floor(backgroundColors.length * Math.random())
 
 	// function setColorr(clr) {
