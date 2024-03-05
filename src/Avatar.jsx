@@ -2,6 +2,7 @@ import { IoPersonSharp } from 'react-icons/io5'
 import classnames from 'classnames'
 import bob from './assets/bob.jpg'
 import tom from './assets/Tom.jpg'
+import { useState } from 'react'
 
 /**
  * Challenge: Create a flexible Avatar component!
@@ -50,7 +51,14 @@ export default function Avatar({
 		'yellow',
 		'orange',
 	]
+
+	// const [color, setColor] = useState('orange')
+
 	const randomIndex = Math.floor(backgroundColors.length * Math.random())
+
+	// function setColorr(clr) {
+	// 	setColor(clr)
+	// }
 
 	if (src) {
 		// Photo

@@ -1,5 +1,4 @@
 import Avatar from './Avatar'
-import bob from './assets/bob.jpg'
 import tom from './assets/Tom.jpg'
 
 function App() {
@@ -13,35 +12,89 @@ function App() {
 		'yellow',
 		'orange',
 	]
-	const randomIndex1 = Math.floor(backgroundColors.length * Math.random())
-	let randomIndex2 = randomIndex1
-	while (randomIndex2 === randomIndex1) {
-		randomIndex2 = Math.floor(backgroundColors.length * Math.random())
+	console.log('hej')
+	const button = document.getElementById('new-color-btn')
+	console.log(button)
+
+	//button.addEventListener('click', generateColors)
+	button.addEventListener('click', () => {
+		console.log('Statarlänga!')
+		const randomIndex1 = Math.floor(backgroundColors.length * Math.random())
+		let randomIndex2 = randomIndex1
+		let randomIndex3 = randomIndex1
+		while (randomIndex2 === randomIndex1) {
+			randomIndex2 = Math.floor(backgroundColors.length * Math.random())
+		}
+		while (randomIndex3 === randomIndex1 || randomIndex3 === randomIndex2) {
+			randomIndex3 = Math.floor(backgroundColors.length * Math.random())
+		}
+
+		color1 = backgroundColors[randomIndex1]
+		color2 = backgroundColors[randomIndex2]
+		color3 = backgroundColors[randomIndex3]
+		console.log('heimat!')
+	})
+
+	// const [color1, setColor1] = useState('orange')
+	let color1 = 'orange'
+	let color2 = 'blue'
+	let color3 = 'yellow'
+
+	function generateColors() {
+		const randomIndex1 = Math.floor(backgroundColors.length * Math.random())
+		let randomIndex2 = randomIndex1
+		let randomIndex3 = randomIndex1
+		while (randomIndex2 === randomIndex1) {
+			randomIndex2 = Math.floor(backgroundColors.length * Math.random())
+		}
+		while (randomIndex3 === randomIndex1 || randomIndex3 === randomIndex2) {
+			randomIndex3 = Math.floor(backgroundColors.length * Math.random())
+		}
+
+		color1 = backgroundColors[randomIndex1]
+		color2 = backgroundColors[randomIndex2]
+		color3 = backgroundColors[randomIndex3]
+		console.log('heimat!')
 	}
+
 	return (
 		<>
 			<div className="main-board">
 				<div className="user">
 					<Avatar
-						src="https://randomuser.me/api/portraits/men/9.jpg"
-						alt="Bob Persson"
+						src="https://randomuser.me/api/portraits/men/3.jpg"
+						alt="Bob Person"
 					/>
 
-					<Avatar color={backgroundColors[randomIndex1]}>BP</Avatar>
+					<Avatar color={color1}>BP</Avatar>
 
-					<Avatar color={backgroundColors[randomIndex1]} />
+					<Avatar color={color1} />
+				</div>
+
+				<div className="user">
+					<Avatar
+						src="https://randomuser.me/api/portraits/men/0.jpg"
+						alt="Jeff Nicholson"
+					/>
+
+					<Avatar color={color2}>JN</Avatar>
+
+					<Avatar color={color2} />
 				</div>
 
 				<div className="user">
 					<Avatar src={tom} alt="Tom Serenander" />
 
-					<Avatar color={backgroundColors[randomIndex2]}>TS</Avatar>
+					<Avatar color={color3}>TS</Avatar>
 
-					<Avatar color={backgroundColors[randomIndex2]} />
+					<Avatar color={color3} />
 				</div>
 			</div>
-			<div class="home-hero__cta">
-				<btn className="btn btn--bg">Test new colors</btn>
+
+			<div className="home-hero__cta">
+				<btn id="new-color-btn" className="btn btn--bg">
+					Change colors
+				</btn>
 			</div>
 		</>
 	)

@@ -74,9 +74,9 @@ body {
 }
 
 .btn {
-	background: #b3b3b3;
+	background: #cccccc;
 	color: #333;
-	margin-top: 50px;
+	margin-top: 10px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	display: inline-block;
