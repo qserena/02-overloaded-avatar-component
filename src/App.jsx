@@ -95,13 +95,13 @@ function App() {
 			</div>
 
 			<div className="home-hero__cta">
-				<btn
+				<button
 					id="new-color-btn"
 					onClick={generateColors}
 					className="btn btn--bg"
 				>
 					Change colors
-				</btn>
+				</button>
 			</div>
 		</>
 	)
