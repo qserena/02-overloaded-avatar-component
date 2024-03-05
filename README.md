@@ -1,7 +1,7 @@
 # Avatar Component
 
 ## Description
-This is an avatar made as a reusable React Component which can appear in the following three different versions, depending on which props are provided to it:
+This is an avatar made as a reusable React Component which comes in the following three different versions, depending on which props are provided to it:
 
 - With an image (photo)
 - With initials
