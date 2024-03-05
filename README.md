@@ -7,9 +7,9 @@ This is an avatar made as a reusable React Component which comes in the followin
 - With initials
 - Anonymous, with a user icon from IoPersonSharp in the `react-icons` library.
 
-In this version of the component the "Initials version" is hard-coded to red color, and the color of the "Anonymous version" is randomized.
+The screenshot below shows an overview of the three versions of the component, rendered for three users.
 
-The screenshot below shows an overview of the three versions of the component for two users.
+Clicking the button at the bottom of the page will render the avatars in new random colors.
   
 <br/>
 <img src="avatars.png" alt="Screenshot." width="300px"/>
