@@ -1,99 +1,108 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-	--navy: #1f2937;
-	--pink: #da6aec;
-	--red: #f43f5e;
-	--blue: #2f74dc;
-	--green: #22cd90;
+    --navy: #1f2937;
+    --pink: #da6aec;
+    --red: #f43f5e;
+    --blue: #2f74dc;
+    --green: #22cd90;
 }
 
 body {
-	background-color: #2f2f2f;
-	font-family: 'Source Sans Pro', sans-serif;
-	-webkit-user-select: none; /* Safari */
-	-ms-user-select: none; /* IE 10 and IE 11 */
-	user-select: none; /* Standard syntax */
+    background-color: #2f2f2f;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    display: flex;
+    justify-content: center;
 }
+
+/*.main-board {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 100px;
+}*/
 
 .main-board {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 10%;
-	margin-top: 100px;
+    width: 550px;
+    height: 550px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+    margin-top: 70px;
 }
 
-.user {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-}
+/* .user {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+} */
 
 .avatar {
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 0.3rem solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.3rem solid white;
 }
 
 .avatar > img {
-	width: 100%;
+    width: 100%;
 }
 
 .avatar-letters {
-	background-color: var(--red);
-	color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 2.5rem;
-	font-family: 'Karla', sans-serif;
+    background-color: var(--red);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'Karla', sans-serif;
 }
 
 .avatar-icon {
-	background-color: var(--navy);
+    background-color: var(--navy);
 }
 
 .avatar > svg {
-	height: 100%;
-	width: 100%;
-	transform: translateY(20px);
-	color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    transform: translateY(20px);
+    color: whitesmoke;
 }
 
 .home-hero__cta {
-	margin-top: 5rem;
-	text-align: center;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .btn {
-	background: #cccccc;
-	color: #333;
-	margin-top: 10px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	display: inline-block;
-	font-weight: 700;
-	border-radius: 5px;
-	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
-	transition: transform 0.3s;
+    background: #cccccc;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
 }
 
 .btn:hover {
-	transform: translateY(-3px);
-	cursor: pointer;
+    transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .btn--bg {
-	padding: 0.7rem 3rem 0.6rem 3rem;
-	font-size: 1rem;
+    padding: 0.7rem 3rem 0.6rem 3rem;
+    font-size: 1rem;
 }
 
 /*
@@ -101,33 +110,40 @@ Classes below will help with rendering random
 background colors for the extra credit
 */
 .navy {
-	background-color: #1f2937;
+    background-color: #1f2937;
 }
 
 .pink {
-	background-color: #f562d5;
+    background-color: #f562d5;
 }
 
 .red {
-	background-color: #f43f5e;
+    background-color: #f43f5e;
 }
 
 .purple {
-	background-color: #ba03fc;
+    background-color: #ba03fc;
 }
 
 .blue {
-	background-color: #2f74dc;
+    background-color: #2f74dc;
 }
 
 .green {
-	background-color: #22cd90;
+    background-color: #22cd90;
 }
 
 .yellow {
-	background-color: #fcba03;
+    background-color: #fcba03;
 }
 
 .orange {
-	background-color: #fc8403;
+    background-color: #fc8403;
+}
+
+@media (width < 550px) {
+    .main-board {
+        width: 100vw;
+        height: 100vw;
+    }
 }
